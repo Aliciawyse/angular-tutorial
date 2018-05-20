@@ -12,7 +12,7 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
 
   // 'lazy load' companies component
-  {path: 'companies', loadChildren: 'app/companies/companies.module#ComapniesModule'},
+  {path: 'companies', loadChildren: './companies/companies.module#CompaniesModule'},
 
   // our 404 page
   {path: '**', pathMatch: 'full', component: PathNotFoundComponent}
